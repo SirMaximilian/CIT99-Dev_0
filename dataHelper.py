@@ -1,8 +1,12 @@
+import cv2
 
+def write_raw_frame(path, frame, index):
+    filename = F'img_raw.{index}.jpg'
+    status = cv2.imwrite(path + '/' + filename, frame)
+    return
 
-
-def write_frame(path, frame, indexer, x_cord_label, y_cord_label):
-    filename = F'img.{next(indexer)}.{x_cord_label}.{y_cord_label}.jpg'
+def write_frame(path, frame, index, x_cord_label, y_cord_label):
+    filename = F'img.{index}.{x_cord_label}.{y_cord_label}.jpg'
     status = cv2.imwrite(path + '/' + filename, frame)
     return
 

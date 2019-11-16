@@ -1,0 +1,10 @@
+notes
+
+        motion_commander.move_distance( 0.5,   0,   0,VELOCITY) # forward .5 meters
+        motion_commander.move_distance(-1.0,   0,   0,VELOCITY) # back 1.0 meter
+        motion_commander.move_distance(   0,   0, 0.5,VELOCITY) # up .5 meters
+        motion_commander.move_distance(   0,-0.5,   0,VELOCITY) # right .5 meters
+        motion_commander.move_distance( 1.0, 1.0,-1.0,VELOCITY) # forward down left 1 meter
+        motion_commander.move_distance(   0,-1.0,   0,VELOCITY) # right 1 meters
+        motion_commander.move_distance(   0,   0, 1.0,VELOCITY) # up 1 meter
+        motion_commander.move_distance(-0.5, 0.5,   0,VELOCITY) # up .5 meters
