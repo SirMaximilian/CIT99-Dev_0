@@ -28,9 +28,3 @@ def label_parser(filename, label_num = 3, delimiter = '.'):
         temp = filename.find(delimiter,temp) + 1
     indexs.append(len(filename)+1)
     return [int(filename[indexs.pop(0):indexs[0]-1]) for i in range(label_num) ]
-
-def counter(start_index=0):
-    n=0+start_index
-    while True:
-        yield n
-        n+=1
