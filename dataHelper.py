@@ -19,6 +19,8 @@ def imgcrop224(frame):
     print 
     return frame[int(cy/2):int(cy/2)+224, int(cx/2):int(cx/2)+224]
 
+
+
 def label_parser(filename, label_num = 3, delimiter = '.'):
     # parses filename and returns list of labels seprated by delimiter
     temp = 0
