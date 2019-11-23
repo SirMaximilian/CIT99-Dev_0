@@ -1,0 +1,20 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+cache/
+.ipynb_checkpoints/
+__pycache__/
+raw_datasets/
+labeled_datasets/
+Drone_Movement_Routine.ipynb
+<<<<<<< HEAD
+drone-dataset-uav.zip
+amateur-unmanned-air-vehicle-detection-dataset.zip
+libs/
+labeled_datasets/
+=======
+.misc/
+>>>>>>> 08a610cafb7715636d2df565496c1eda573c81ae
