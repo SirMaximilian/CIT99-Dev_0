@@ -21,8 +21,11 @@ def imgcrop224(frame):
 
 
 
-def label_parser(filename, label_num = 3, delimiter = '.'):
+def label_parser(filename, label_num = 3, delimiter = '.', ext = True):
     # parses filename and returns list of labels seprated by delimiter
+    if ext:
+        filename = filename[:filename.rfind('.')]
+    
     temp = 0
     indexs = []
     for i in range(label_num):
