@@ -15,6 +15,7 @@ class controller_class:
         self.vector_x = 0
         self.vector_y = 0
         self.vector_z = 0
+        self.yaw
         self.keep_flying = False
     
     # debug print
@@ -27,8 +28,8 @@ cntr_object = controller_class()
 
 # my keyboard callback function
 # gets called anytime there is a keyboard event
-# responds to a, z, q and, arrow keys
-# requires cntr_object to exsist
+# responds to WASD and q and, arrow keys
+# requires cntr_object to exist
 def key_events_callback(e):
     #for code in keyboard._pressed_events:
     #    print(code)
@@ -55,11 +56,11 @@ def key_events_callback(e):
     else:
         cntr_object.vector_y = 0
        
-    # 'a' key and not 'z' key
-    if 30 in k and 44 not in k: #z up
-        cntr_object.vector_z = 0.5
-    elif  44 in k and 30 not in k: #z down
-        cntr_object.vector_z = -0.5
+    # 'w' key and not 's' key
+    if 17 in k and 31 not in k: #z up
+        cntr_object.vector_z = 0.2
+    elif  31 in k and 17 not in k: #z down
+        cntr_object.vector_z = -0.2
     else:
         cntr_object.vector_z = 0
 
