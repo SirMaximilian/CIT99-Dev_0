@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import cv2
 
 def write_frame(path, frame, index, x_cord_label, y_cord_label):
     filename = F'img.{index}.{x_cord_label}.{y_cord_label}.jpg'
