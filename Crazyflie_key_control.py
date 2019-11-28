@@ -15,7 +15,7 @@ class controller_class:
         self.vector_x = 0
         self.vector_y = 0
         self.vector_z = 0
-        self.yaw
+        self.yaw = 0
         self.keep_flying = False
     
     # debug print
