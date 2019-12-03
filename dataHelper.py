@@ -33,3 +33,7 @@ def label_parser(filename, label_num = 3, delimiter = '.', ext = True):
         temp = filename.find(delimiter,temp) + 1
     indexs.append(len(filename)+1)
     return [int(filename[indexs.pop(0):indexs[0]-1]) for i in range(label_num) ]
+
+
+def process_output(L):
+    return 224 * (L / 2.0 + 0.5)
