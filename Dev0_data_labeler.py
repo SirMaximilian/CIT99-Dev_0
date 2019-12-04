@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
-import LabelDataHelper as dH
+import dataHelper as dH
 import os
 
 data = os.scandir(os.getcwd() + '/raw_datasets')

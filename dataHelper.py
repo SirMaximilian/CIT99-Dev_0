@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import cv2
 
 def write_raw_frame(path, frame, index):
@@ -7,7 +8,7 @@ def write_raw_frame(path, frame, index):
 
 def write_frame(path, frame, index, x_cord_label, y_cord_label):
     filename = F'img.{index}.{x_cord_label}.{y_cord_label}.jpg'
-    status = cv2.imwrite(path + '/' + filename, frame)
+    status = plt.imsave(path + '/' + filename, frame)
     return
 
 def imgcrop224(frame):
